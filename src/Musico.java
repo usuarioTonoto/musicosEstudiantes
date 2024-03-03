@@ -16,4 +16,5 @@ public interface Musico {
         }
     }
     public String getNombreArtistico();
+    public void setNombreArtistico(String nombreArtistico);
 }
