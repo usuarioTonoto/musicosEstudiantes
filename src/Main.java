@@ -1,3 +1,8 @@
+import Guardar.Mochila;
+import Guardar.ObjetoGuardable;
+
+import java.util.List;
+
 public class Main {
     public static void main(String[] args) {
         Persona daniel = new Persona("Daniel", 18, null, null, null);
@@ -11,6 +16,8 @@ public class Main {
         prog.molestarEstudiante(zebra);
 
         prog.pagarMusico(daniel);
+
+        Mochila<ObjetoGuardable> miMocla = new Mochila<>("Mochíla", List.of(zebra,zebra,daniel));
     }
 
     public void molestarEstudiante(Estudiantes e) {

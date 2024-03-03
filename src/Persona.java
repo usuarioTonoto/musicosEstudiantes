@@ -1,5 +1,7 @@
+import Guardar.ObjetoGuardable;
+
 // Solo se puede heredar de 1 a 2 clases
-public class Persona implements Estudiantes,Musico{
+public class Persona implements Estudiantes, Musico, ObjetoGuardable {
     String nombre;
     int edad;
     Persona madre;

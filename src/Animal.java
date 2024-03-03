@@ -1,4 +1,6 @@
-public class Animal implements Estudiantes {
+import Guardar.ObjetoGuardable;
+
+public class Animal implements Estudiantes, ObjetoGuardable {
     @Override
     public void leer(String libro) {
         System.out.println("Este animal esta leyendo " + libro);
